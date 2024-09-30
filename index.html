@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <title>Spotify - Web Player: Music for everyone</title>
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="left bg-black">
+        <div class="home bg-grey m-1 rounded p-1">
+          <div class="logo">
+            <img class="invert" src="img/logo.svg" alt="logo" />
+          </div>
+          <ul>
+            <li><img class="invert" src="img/home.svg" alt="home" />Home</li>
+            <li>
+              <img class="invert" src="img/search.svg" alt="search" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-grey m-1 rounded p-1">
+          <div class="heading">
+            <img class="invert" src="img/playlist.svg" alt="playlist" />
+            <h2>Your PlayList</h2>
+          </div>
+          <div class="songListUl">
+            <ul class="songList"></ul>
+          </div>
+
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/np-en/legal/">
+                <span>Legal</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/np-en/safetyandprivacy/">
+                <span>Safety &amp; Privacy Center</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/np-en/legal/privacy-policy/">
+                <span>Privacy Policy</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/np-en/legal/cookies-policy/">
+                <span>Cookies</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/np-en/legal/privacy-policy/#s3">
+                <span>About Ads</span>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/np-en/accessibility/">
+                <span>Accessibility</span>
+              </a>
+            </div>
+            <a href="https://www.spotify.com/legal/cookies-policy/">
+              <span>Cookies</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="right rounded">
+        <div class="header rounded">
+          <div class="nav">
+            <div class="icon"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="icon"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+          <div class="buttons">
+            <a class="signup" href="#">Sign up</a>
+            <button class="login">Log IN</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylists">
+          <h2>Spotify Playlist</h2>
+          <div class="cardContainer">
+            <div class="card">
+              <img src="img/cover.jpg" alt="cover" />
+              <h2>Jazz for Sleep</h2>
+              <p>Songs for the sleepy nights with the sweet dreams</p>
+
+              <div class="greenPlay">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/cover.jpg" alt="cover" />
+              <h2>Jazz for Sleep</h2>
+              <p>Songs for the sleepy nights with the sweet dreams</p>
+              <div class="greenPlay">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="playbar">
+          <div class="songName"></div>
+          <div class="playRange">
+            <input type="range" name="range" id="progressBar" value="0" min="0" max="100" />
+          </div>
+          <div class="playButtons">
+            <img class="invert prev" src="img/prevsong.svg" alt="previous" />
+            <img class="invert play" src="img/play.svg" alt="play" />
+            <img class="invert next" src="img/nextsong.svg" alt="next" />
+          </div>
+          <div class="timestamp">00:00</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
